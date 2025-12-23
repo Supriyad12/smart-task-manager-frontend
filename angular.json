@@ -1,125 +1,31 @@
-{
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
-  "cli": {
-    "packageManager": "npm",
-    "analytics": false
-  },
-  "newProjectRoot": "projects",
-  "projects": {
-    "frontendTask": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular/build:application",
-          "options": {
-            "outputPath": "dist/frontendTask",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public",
-                "output": "/"
-              },
-              {
-                "glob": "**/*",
-                "input": "src/assets",
-                "output": "/assets"
-              }
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
-            },
-            "development": {
-              "optimization": false,
-              "sourceMap": true,
-              "extractCss": false,
-              "namedChunks": true,
-              "aot": false,
-              "extractLicenses": false,
-              "vendorChunk": true,
-              "buildOptimizer": false
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular/build:dev-server",
-          "options": {
-            "browserTarget": "frontendTask:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "frontendTask:build:production"
-            },
-            "development": {
-              "browserTarget": "frontendTask:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "test": {
-          "builder": "@angular/build:unit-test",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    }
-  },
-  "defaultProject": "frontendTask"
-}
+[{
+	"resource": "/c:/Users/Supriya/OneDrive/Desktop/smart-task-manager/frontendTask/angular.json",
+	"owner": "_generated_diagnostic_collection_name_#1",
+	"severity": 4,
+	"message": "Property executor is not allowed.",
+	"startLineNumber": 12,
+	"startColumn": 11,
+	"endLineNumber": 12,
+	"endColumn": 21,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/Supriya/OneDrive/Desktop/smart-task-manager/frontendTask/angular.json",
+	"owner": "_generated_diagnostic_collection_name_#1",
+	"severity": 4,
+	"message": "Property executor is not allowed.",
+	"startLineNumber": 42,
+	"startColumn": 11,
+	"endLineNumber": 42,
+	"endColumn": 21,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/Supriya/OneDrive/Desktop/smart-task-manager/frontendTask/angular.json",
+	"owner": "_generated_diagnostic_collection_name_#1",
+	"severity": 4,
+	"message": "Property executor is not allowed.",
+	"startLineNumber": 57,
+	"startColumn": 11,
+	"endLineNumber": 57,
+	"endColumn": 21,
+	"origin": "extHost1"
+}]
