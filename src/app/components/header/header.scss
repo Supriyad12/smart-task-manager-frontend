@@ -1,0 +1,55 @@
+/* Header styling */
+header {
+  background-color: #007bff;  /* Blue header */
+  padding: 12px 20px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* spacing between links/buttons */
+}
+
+/* Links in nav */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700; /* Golden hover effect */
+}
+
+/* Logout button */
+nav button {
+  background-color: #dc3545;  /* Red button */
+  border: none;
+  padding: 6px 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav a, nav button {
+    margin: 5px 0;
+  }
+}
