@@ -23,11 +23,21 @@ export const routes: Routes = [
     canActivate: [AuthGuard]
   },
 
+// {
+//   path: 'tasks/edit/:id',
+//   component: TaskFormComponent,
+//     canActivate: [AuthGuard]
+
+//   }
+  ,
 {
   path: 'tasks/edit/:id',
   component: TaskFormComponent,
-    canActivate: [AuthGuard]
+  canActivate: [AuthGuard],
+  data: { renderMode: 'client' }
 }
+
+
 ,
   { path: '', redirectTo: '/register', pathMatch: 'full' },
   { path: '**', redirectTo: '/register' }
